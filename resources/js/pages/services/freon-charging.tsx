@@ -23,10 +23,10 @@ export default function FreonChargingService() {
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
-            
+
             <div className="service-page">
                 <PublicNavigation />
-                
+
                 {/* Hero Section */}
                 <section className="service-hero-section">
                     <div className="service-hero-container">
@@ -43,9 +43,9 @@ export default function FreonChargingService() {
                         <div className="service-content-grid">
                             {/* Service Image */}
                             <div className="service-image-container">
-                                <img 
-                                    src="/images/ac-freon.jpg" 
-                                    alt="Professional Freon Charging Service" 
+                                <img
+                                    src="/images/ac-freon.jpg"
+                                    alt="Professional Freon Charging Service"
                                     className="service-image"
                                 />
                             </div>
@@ -56,15 +56,17 @@ export default function FreonChargingService() {
                                     <span className="service-price-label">Starting Price</span>
                                     <span className="service-price-value">₱ 1,200.00</span>
                                 </div>
-                                
+
                                 <div className="service-duration">
                                     <span className="service-duration-label">Duration</span>
                                     <span className="service-duration-value">45-90 minutes</span>
                                 </div>
-                                
-                                <Link href={route('booking')} className="service-book-btn">
+
+                                {/*<Link href={route('booking')} className="service-book-btn">
                                     Book Now
-                                </Link>
+                                </Link>*/}
+
+                                <a href="https://www.facebook.com/kamotechairconservices" className="service-book-btn">Book Now</a>
 
                                 {/* Other Services Section */}
                                 <div className="service-other-services-compact">
@@ -73,9 +75,9 @@ export default function FreonChargingService() {
                                         {otherServices.map((service, index) => {
                                             const IconComponent = service.icon;
                                             return (
-                                                <Link 
+                                                <Link
                                                     key={index}
-                                                    href={service.href} 
+                                                    href={service.href}
                                                     className="service-other-item-compact"
                                                 >
                                                     <IconComponent size={18} style={{ color: '#083860' }} />
@@ -95,13 +97,13 @@ export default function FreonChargingService() {
                     <div className="service-container">
                         <div className="service-info-content">
                             <h2 className="service-main-question">Is your AC not cooling enough?</h2>
-                            
+
                             <p className="service-description">
-                                A properly charged air conditioning system is critical for effective cooling. Kamotech offers accurate 
-                                and safe Freon charging services to restore your unit's performance. Low refrigerant levels can lead 
-                                to poor cooling, higher energy use, and even compressor damage. Our technicians use the correct type 
-                                and amount of refrigerant for your specific system, following strict safety procedures to prevent leaks 
-                                and ensure optimal operation. We also check for potential causes of Freon loss to provide a complete 
+                                A properly charged air conditioning system is critical for effective cooling. Kamotech offers accurate
+                                and safe Freon charging services to restore your unit's performance. Low refrigerant levels can lead
+                                to poor cooling, higher energy use, and even compressor damage. Our technicians use the correct type
+                                and amount of refrigerant for your specific system, following strict safety procedures to prevent leaks
+                                and ensure optimal operation. We also check for potential causes of Freon loss to provide a complete
                                 and reliable solution.
                             </p>
 
@@ -112,8 +114,8 @@ export default function FreonChargingService() {
                                     What's Included:
                                 </h3>
                                 <p className="service-included-text">
-                                    This service includes measuring the current refrigerant level, locating possible leaks, and charging 
-                                    the unit with the appropriate type and amount of Freon (refrigerant). We also test the cooling output 
+                                    This service includes measuring the current refrigerant level, locating possible leaks, and charging
+                                    the unit with the appropriate type and amount of Freon (refrigerant). We also test the cooling output
                                     to confirm optimal performance.
                                 </p>
                             </div>
@@ -125,8 +127,8 @@ export default function FreonChargingService() {
                                     Benefits:
                                 </h3>
                                 <p className="service-benefits-text">
-                                    Proper refrigerant levels are crucial for cooling efficiency. Our Freon charging service restores 
-                                    the system's ability to cool your space effectively, protects the compressor, and reduces energy usage. 
+                                    Proper refrigerant levels are crucial for cooling efficiency. Our Freon charging service restores
+                                    the system's ability to cool your space effectively, protects the compressor, and reduces energy usage.
                                     Kamotech ensures your AC runs smoothly and safely with the right refrigerant balance.
                                 </p>
                             </div>

@@ -23,10 +23,10 @@ export default function InstallationService() {
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
-            
+
             <div className="service-page">
                 <PublicNavigation />
-                
+
                 {/* Hero Section */}
                 <section className="service-hero-section">
                     <div className="service-hero-container">
@@ -43,9 +43,9 @@ export default function InstallationService() {
                         <div className="service-content-grid">
                             {/* Service Image */}
                             <div className="service-image-container">
-                                <img 
-                                    src="/images/ac-installation.jpg" 
-                                    alt="Professional AC Installation Service" 
+                                <img
+                                    src="/images/ac-installation.jpg"
+                                    alt="Professional AC Installation Service"
                                     className="service-image"
                                 />
                             </div>
@@ -56,15 +56,17 @@ export default function InstallationService() {
                                     <span className="service-price-label">Starting Price</span>
                                     <span className="service-price-value">₱ 2,500.00</span>
                                 </div>
-                                
+
                                 <div className="service-duration">
                                     <span className="service-duration-label">Duration</span>
                                     <span className="service-duration-value">2-4 hours</span>
                                 </div>
-                                
-                                <Link href={route('booking')} className="service-book-btn">
+
+                                {/*<Link href={route('booking')} className="service-book-btn">
                                     Book Now
-                                </Link>
+                                </Link>*/}
+
+                                <a href="https://www.facebook.com/kamotechairconservices" className="service-book-btn">Book Now</a>
 
                                 {/* Other Services Section */}
                                 <div className="service-other-services-compact">
@@ -73,9 +75,9 @@ export default function InstallationService() {
                                         {otherServices.map((service, index) => {
                                             const IconComponent = service.icon;
                                             return (
-                                                <Link 
+                                                <Link
                                                     key={index}
-                                                    href={service.href} 
+                                                    href={service.href}
                                                     className="service-other-item-compact"
                                                 >
                                                     <IconComponent size={18} style={{ color: '#083860' }} />
@@ -95,13 +97,13 @@ export default function InstallationService() {
                     <div className="service-container">
                         <div className="service-info-content">
                             <h2 className="service-main-question">Need a new AC installed?</h2>
-                            
+
                             <p className="service-description">
-                                Kamotech provides expert air conditioning installation services designed to meet the specific needs 
-                                of homes and businesses. Our skilled technicians follow industry standards to ensure each unit is 
-                                properly installed—from secure mounting and electrical connections to correct refrigerant line setup. 
-                                We handle a wide range of AC systems including split-type, window-type, and floor standing units. 
-                                Our goal is to deliver safe, efficient, and long-lasting performance from the moment your unit is 
+                                Kamotech provides expert air conditioning installation services designed to meet the specific needs
+                                of homes and businesses. Our skilled technicians follow industry standards to ensure each unit is
+                                properly installed—from secure mounting and electrical connections to correct refrigerant line setup.
+                                We handle a wide range of AC systems including split-type, window-type, and floor standing units.
+                                Our goal is to deliver safe, efficient, and long-lasting performance from the moment your unit is
                                 installed. With Kamotech, you can trust that your AC is set up for maximum comfort and reliability.
                             </p>
 
@@ -112,8 +114,8 @@ export default function InstallationService() {
                                     What's Included:
                                 </h3>
                                 <p className="service-included-text">
-                                    We provide complete installation for various AC units including split-type, window-type, and floor 
-                                    standing units. The service includes mounting the unit, installing refrigerant piping, connecting 
+                                    We provide complete installation for various AC units including split-type, window-type, and floor
+                                    standing units. The service includes mounting the unit, installing refrigerant piping, connecting
                                     electrical components, and testing the system to ensure proper operation.
                                 </p>
                             </div>
@@ -125,8 +127,8 @@ export default function InstallationService() {
                                     Benefits:
                                 </h3>
                                 <p className="service-benefits-text">
-                                    A properly installed air conditioning system ensures efficient performance and reduces the chance 
-                                    of early malfunctions. Kamotech guarantees professional installation that meets safety and 
+                                    A properly installed air conditioning system ensures efficient performance and reduces the chance
+                                    of early malfunctions. Kamotech guarantees professional installation that meets safety and
                                     manufacturer standards, helping you enjoy a cool and worry-free indoor environment from day one.
                                 </p>
                             </div>

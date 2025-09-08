@@ -23,10 +23,10 @@ export default function RelocationService() {
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
-            
+
             <div className="service-page">
                 <PublicNavigation />
-                
+
                 {/* Hero Section */}
                 <section className="service-hero-section">
                     <div className="service-hero-container">
@@ -43,9 +43,9 @@ export default function RelocationService() {
                         <div className="service-content-grid">
                             {/* Service Image */}
                             <div className="service-image-container">
-                                <img 
-                                    src="/images/ac-relocation.jpg" 
-                                    alt="Professional AC Relocation Service" 
+                                <img
+                                    src="/images/ac-relocation.jpg"
+                                    alt="Professional AC Relocation Service"
                                     className="service-image"
                                 />
                             </div>
@@ -56,15 +56,17 @@ export default function RelocationService() {
                                     <span className="service-price-label">Starting Price</span>
                                     <span className="service-price-value">₱ 4,000.00</span>
                                 </div>
-                                
+
                                 <div className="service-duration">
                                     <span className="service-duration-label">Duration</span>
                                     <span className="service-duration-value">4-8 hours</span>
                                 </div>
-                                
-                                <Link href={route('booking')} className="service-book-btn">
+
+                                {/*<Link href={route('booking')} className="service-book-btn">
                                     Book Now
-                                </Link>
+                                </Link>*/}
+
+                                <a href="https://www.facebook.com/kamotechairconservices" className="service-book-btn">Book Now</a>
 
                                 {/* Other Services Section */}
                                 <div className="service-other-services-compact">
@@ -73,9 +75,9 @@ export default function RelocationService() {
                                         {otherServices.map((service, index) => {
                                             const IconComponent = service.icon;
                                             return (
-                                                <Link 
+                                                <Link
                                                     key={index}
-                                                    href={service.href} 
+                                                    href={service.href}
                                                     className="service-other-item-compact"
                                                 >
                                                     <IconComponent size={18} style={{ color: '#083860' }} />
@@ -95,13 +97,13 @@ export default function RelocationService() {
                     <div className="service-container">
                         <div className="service-info-content">
                             <h2 className="service-main-question">Moving to a new location?</h2>
-                            
+
                             <p className="service-description">
-                                Relocating an air conditioning unit requires care, precision, and technical expertise. Kamotech provides 
-                                professional AC relocation services for homeowners, offices, and commercial spaces. We manage the safe 
-                                disassembly, transport, and reinstallation of your AC unit while ensuring all components, including 
-                                refrigerant lines and electrical connections, are handled properly. Whether you are renovating, moving 
-                                to a new home, or simply repositioning your unit, we make sure it operates efficiently and safely in its 
+                                Relocating an air conditioning unit requires care, precision, and technical expertise. Kamotech provides
+                                professional AC relocation services for homeowners, offices, and commercial spaces. We manage the safe
+                                disassembly, transport, and reinstallation of your AC unit while ensuring all components, including
+                                refrigerant lines and electrical connections, are handled properly. Whether you are renovating, moving
+                                to a new home, or simply repositioning your unit, we make sure it operates efficiently and safely in its
                                 new location, with minimal disruption to your routine.
                             </p>
 
@@ -112,8 +114,8 @@ export default function RelocationService() {
                                     What's Included:
                                 </h3>
                                 <p className="service-included-text">
-                                    Our AC relocation service covers safe disassembly of the unit, refrigerant recovery, careful transport, 
-                                    and full reinstallation at the new location. We inspect all components for damage and ensure the system 
+                                    Our AC relocation service covers safe disassembly of the unit, refrigerant recovery, careful transport,
+                                    and full reinstallation at the new location. We inspect all components for damage and ensure the system
                                     is tested and fully functional after reinstallation.
                                 </p>
                             </div>
@@ -125,8 +127,8 @@ export default function RelocationService() {
                                     Benefits:
                                 </h3>
                                 <p className="service-benefits-text">
-                                    Relocating your AC can be risky if not done properly. Kamotech's expert team ensures your system is 
-                                    moved and reinstalled without damage or performance issues. Whether you are renovating or changing 
+                                    Relocating your AC can be risky if not done properly. Kamotech's expert team ensures your system is
+                                    moved and reinstalled without damage or performance issues. Whether you are renovating or changing
                                     room layouts, we make the transition seamless and stress-free.
                                 </p>
                             </div>

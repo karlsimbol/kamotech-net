@@ -8,8 +8,8 @@ export default function Contact() {
     const { auth } = usePage<SharedData>().props;
 
     const coverageAreas = [
-        'Abucay', 'Bagac', 'Balanga City', 'Dinalupihan', 
-        'Hermosa', 'Limay', 'Mariveles', 'Morong', 
+        'Abucay', 'Bagac', 'Balanga City', 'Dinalupihan',
+        'Hermosa', 'Limay', 'Mariveles', 'Morong',
         'Orani', 'Orion', 'Pilar', 'Samal'
     ];
 
@@ -19,10 +19,10 @@ export default function Contact() {
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
-            
+
             <div className="contact-page">
                 <PublicNavigation />
-                
+
                 {/* Hero Section */}
                 <section className="contact-hero-section">
                     <div className="contact-hero-container">
@@ -56,8 +56,8 @@ export default function Contact() {
                                 </div>
                                 <h3 className="contact-card-title">Cellphone Number</h3>
                                 <div className="contact-card-content">
-                                    <a href="tel:09074452484" className="contact-link">
-                                        0907 445 2484
+                                    <a href="tel:09770936399" className="contact-link">
+                                        0977 093 6399
                                     </a>
                                     <p className="contact-note">Call us for immediate assistance</p>
                                 </div>
@@ -84,7 +84,7 @@ export default function Contact() {
                                 </div>
                                 <h3 className="contact-card-title">Facebook Account</h3>
                                 <div className="contact-card-content">
-                                    <span className="contact-social">Kamotech Aircon Services</span>
+                                    <a href="https://www.facebook.com/kamotechairconservices" className="contact-link">Kamotech Aircon Services</a>
                                     <p className="contact-note">Follow us for updates and tips</p>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@ export default function Contact() {
                             <div className="contact-title-underline"></div>
                             <p className="contact-section-subtitle">We proudly serve the following areas across Bataan Province</p>
                         </div>
-                        
+
                         <div className="contact-coverage-map-grid">
                             {/* Coverage Areas */}
                             <div className="contact-coverage-content">
@@ -143,20 +143,20 @@ export default function Contact() {
                                         </div>
                                     ))}
                                 </div>
-                                
+
                                 <div className="contact-coverage-note">
                                     <p>Bringing comfort to Bataan — efficiently, one service at a time!</p>
                                 </div>
                             </div>
-                            
+
                             {/* Service Coverage Map */}
                             <div className="contact-map-content">
                                 <h3 className="contact-map-subtitle">Service Coverage Map</h3>
                                 <div className="contact-map-container">
                                     <div className="contact-map-wrapper">
-                                        <img 
-                                            src="/images/bataan-map.png.png" 
-                                            alt="Bataan Service Coverage Map" 
+                                        <img
+                                            src="/images/bataan-map.png.png"
+                                            alt="Bataan Service Coverage Map"
                                             className="contact-map-image"
                                         />
                                         <div className="contact-map-overlay">

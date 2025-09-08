@@ -31,9 +31,9 @@ export function PublicNavigation() {
         const handleMobileClickOutside = (event: MouseEvent | TouchEvent) => {
             const nav = document.querySelector('.nav-mobile');
             const toggle = document.querySelector('.nav-mobile-toggle');
-            
-            if (isMenuOpen && nav && toggle && 
-                !nav.contains(event.target as Node) && 
+
+            if (isMenuOpen && nav && toggle &&
+                !nav.contains(event.target as Node) &&
                 !toggle.contains(event.target as Node)) {
                 setIsMenuOpen(false);
                 setIsServicesDropdownOpen(false);
@@ -44,7 +44,7 @@ export function PublicNavigation() {
         document.addEventListener('touchstart', handleClickOutside);
         document.addEventListener('mousedown', handleMobileClickOutside);
         document.addEventListener('touchstart', handleMobileClickOutside);
-        
+
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
             document.removeEventListener('touchstart', handleClickOutside);
@@ -77,22 +77,22 @@ export function PublicNavigation() {
                 <div className="nav-desktop">
                     <ul className="nav-links">
                         <li className="nav-dropdown" ref={dropdownRef} onMouseEnter={showServicesDropdown} onMouseLeave={hideServicesDropdown}>
-                            <button 
+                            <button
                                 className="nav-link nav-dropdown-toggle"
                                 aria-expanded={isServicesDropdownOpen}
                             >
                                 Services
-                                <ChevronDown 
-                                    size={16} 
-                                    className={`nav-dropdown-icon ${isServicesDropdownOpen ? 'open' : ''}`} 
+                                <ChevronDown
+                                    size={16}
+                                    className={`nav-dropdown-icon ${isServicesDropdownOpen ? 'open' : ''}`}
                                 />
                             </button>
                             {isServicesDropdownOpen && (
                                 <div className="nav-dropdown-menu" onMouseEnter={showServicesDropdown} onMouseLeave={hideServicesDropdown}>
                                     {services.map((service, index) => (
-                                        <Link 
+                                        <Link
                                             key={index}
-                                            href={service.href} 
+                                            href={service.href}
                                             className="nav-dropdown-link"
                                             onClick={() => setIsServicesDropdownOpen(false)}
                                         >
@@ -102,26 +102,21 @@ export function PublicNavigation() {
                                 </div>
                             )}
                         </li>
-                        <li><a href="#support" className="nav-link">Support</a></li>
+                        <li><a href="https://www.facebook.com/kamotechairconservices" className="nav-link">Support</a></li>
                         <li><Link href={route('about')} className="nav-link">About Us</Link></li>
                         <li><Link href={route('contact')} className="nav-link">Contact Us</Link></li>
                     </ul>
-                    
+
                     <div className="nav-auth">
-                        {/*<Link href={route('booking')} className="nav-auth-link book-now-link">
-                            Book Now
-                        </Link>*/}
-                        <Link href={route('login')} className="nav-auth-link login-link">
-                            Log in
-                        </Link>
-                        <Link href={route('register')} className="nav-auth-link signup-link">
-                            Sign up
-                        </Link>
+                        {/*<Link href={route('login')} className="nav-auth-link login-link">Log in</Link>
+                        <Link href={route('register')} className="nav-auth-link signup-link">Sign up</Link>*/}
+                        <a href="https://www.facebook.com/kamotechairconservices" className="nav-auth-link login-link">Log in</a>
+                        <a href="https://www.facebook.com/kamotechairconservices" className="nav-auth-link signup-link">Sign up</a>
                     </div>
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button 
+                <button
                     className="nav-mobile-toggle"
                     onClick={toggleMenu}
                     aria-label="Toggle navigation menu"
@@ -135,7 +130,7 @@ export function PublicNavigation() {
                 <div className="nav-mobile">
                     <ul className="nav-mobile-links">
                         <li className="nav-mobile-dropdown">
-                            <button 
+                            <button
                                 className="nav-mobile-link nav-mobile-dropdown-toggle"
                                 onClick={(e) => {
                                     e.preventDefault();
@@ -145,17 +140,17 @@ export function PublicNavigation() {
                                 aria-expanded={isServicesDropdownOpen}
                             >
                                 Services
-                                <ChevronDown 
-                                    size={16} 
-                                    className={`nav-mobile-dropdown-icon ${isServicesDropdownOpen ? 'open' : ''}`} 
+                                <ChevronDown
+                                    size={16}
+                                    className={`nav-mobile-dropdown-icon ${isServicesDropdownOpen ? 'open' : ''}`}
                                 />
                             </button>
                             {isServicesDropdownOpen && (
                                 <div className="nav-mobile-dropdown-menu">
                                     {services.map((service, index) => (
-                                        <Link 
+                                        <Link
                                             key={index}
-                                            href={service.href} 
+                                            href={service.href}
                                             className="nav-mobile-dropdown-link"
                                             onClick={(e) => {
                                                 e.stopPropagation();
@@ -169,21 +164,16 @@ export function PublicNavigation() {
                                 </div>
                             )}
                         </li>
-                        <li><a href="#support" className="nav-mobile-link" onClick={() => setIsMenuOpen(false)}>Support</a></li>
+                        <li><a href="https://www.facebook.com/kamotechairconservices" className="nav-mobile-link" onClick={() => setIsMenuOpen(false)}>Support</a></li>
                         <li><Link href={route('about')} className="nav-mobile-link" onClick={() => setIsMenuOpen(false)}>About Us</Link></li>
                         <li><Link href={route('contact')} className="nav-mobile-link" onClick={() => setIsMenuOpen(false)}>Contact Us</Link></li>
                     </ul>
-                    
+
                     <div className="nav-mobile-auth">
-                        {/*<Link href={route('booking')} className="nav-mobile-auth-link book-now-link">
-                            Book Now
-                        </Link>*/}
-                        <Link href={route('login')} className="nav-mobile-auth-link login-link">
-                            Log in
-                        </Link>
-                        <Link href={route('register')} className="nav-mobile-auth-link signup-link">
-                            Sign up
-                        </Link>
+                        {/*<Link href={route('login')} className="nav-mobile-auth-link login-link">Log in</Link>
+                        <Link href={route('register')} className="nav-mobile-auth-link signup-link">Sign up</Link>*/}
+                        <Link href="https://www.facebook.com/kamotechairconservices" className="nav-mobile-auth-link login-link">Log in</Link>
+                        <Link href="https://www.facebook.com/kamotechairconservices" className="nav-mobile-auth-link signup-link">Sign up</Link>
                     </div>
                 </div>
             )}

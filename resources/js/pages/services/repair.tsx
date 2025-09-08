@@ -23,10 +23,10 @@ export default function RepairService() {
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
-            
+
             <div className="service-page">
                 <PublicNavigation />
-                
+
                 {/* Hero Section */}
                 <section className="service-hero-section">
                     <div className="service-hero-container">
@@ -43,9 +43,9 @@ export default function RepairService() {
                         <div className="service-content-grid">
                             {/* Service Image */}
                             <div className="service-image-container">
-                                <img 
-                                    src="/images/ac-repair.jpg" 
-                                    alt="Professional AC Repair Service" 
+                                <img
+                                    src="/images/ac-repair.jpg"
+                                    alt="Professional AC Repair Service"
                                     className="service-image"
                                 />
                             </div>
@@ -56,15 +56,17 @@ export default function RepairService() {
                                     <span className="service-price-label">Starting Price</span>
                                     <span className="service-price-value">₱ 800.00</span>
                                 </div>
-                                
+
                                 <div className="service-duration">
                                     <span className="service-duration-label">Duration</span>
                                     <span className="service-duration-value">1-3 hours</span>
                                 </div>
-                                
-                                <Link href={route('booking')} className="service-book-btn">
+
+                                {/*<Link href={route('booking')} className="service-book-btn">
                                     Book Now
-                                </Link>
+                                </Link>*/}
+
+                                <a href="https://www.facebook.com/kamotechairconservices" className="service-book-btn">Book Now</a>
 
                                 {/* Other Services Section */}
                                 <div className="service-other-services-compact">
@@ -73,9 +75,9 @@ export default function RepairService() {
                                         {otherServices.map((service, index) => {
                                             const IconComponent = service.icon;
                                             return (
-                                                <Link 
+                                                <Link
                                                     key={index}
-                                                    href={service.href} 
+                                                    href={service.href}
                                                     className="service-other-item-compact"
                                                 >
                                                     <IconComponent size={18} style={{ color: '#083860' }} />
@@ -95,12 +97,12 @@ export default function RepairService() {
                     <div className="service-container">
                         <div className="service-info-content">
                             <h2 className="service-main-question">Is your AC not working properly?</h2>
-                            
+
                             <p className="service-description">
-                                When your air conditioner isn't working as it should, Kamotech is here to help. Our expert technicians 
-                                quickly diagnose and repair issues with all types of AC units—whether its poor cooling, strange noises, 
-                                leaks, or complete system failure. We use reliable tools and quality parts to restore your system's 
-                                performance and ensure long-lasting results. Trust Kamotech to bring back your comfort with fast, 
+                                When your air conditioner isn't working as it should, Kamotech is here to help. Our expert technicians
+                                quickly diagnose and repair issues with all types of AC units—whether its poor cooling, strange noises,
+                                leaks, or complete system failure. We use reliable tools and quality parts to restore your system's
+                                performance and ensure long-lasting results. Trust Kamotech to bring back your comfort with fast,
                                 dependable, and affordable AC repair solutions.
                             </p>
 
@@ -111,8 +113,8 @@ export default function RepairService() {
                                     What's Included:
                                 </h3>
                                 <p className="service-included-text">
-                                    Our AC repair service covers a full system inspection, identification of faults, and the replacement 
-                                    or repair of defective parts such as capacitors, contactors, compressors, or motors. We use quality 
+                                    Our AC repair service covers a full system inspection, identification of faults, and the replacement
+                                    or repair of defective parts such as capacitors, contactors, compressors, or motors. We use quality
                                     tools and components to ensure long-term reliability.
                                 </p>
                             </div>
@@ -124,8 +126,8 @@ export default function RepairService() {
                                     Benefits:
                                 </h3>
                                 <p className="service-benefits-text">
-                                    With prompt and professional repairs, you can restore your AC's full functionality without unnecessary 
-                                    delays. Kamotech's repair service reduces the risk of further damage, minimizes downtime, and saves you 
+                                    With prompt and professional repairs, you can restore your AC's full functionality without unnecessary
+                                    delays. Kamotech's repair service reduces the risk of further damage, minimizes downtime, and saves you
                                     from costlier replacements by addressing issues early and effectively.
                                 </p>
                             </div>

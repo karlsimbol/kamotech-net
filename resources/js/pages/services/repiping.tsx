@@ -23,10 +23,10 @@ export default function RepipingService() {
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
-            
+
             <div className="service-page">
                 <PublicNavigation />
-                
+
                 {/* Hero Section */}
                 <section className="service-hero-section">
                     <div className="service-hero-container">
@@ -43,9 +43,9 @@ export default function RepipingService() {
                         <div className="service-content-grid">
                             {/* Service Image */}
                             <div className="service-image-container">
-                                <img 
-                                    src="/images/ac-repiping.jpg" 
-                                    alt="Professional AC Repiping Service" 
+                                <img
+                                    src="/images/ac-repiping.jpg"
+                                    alt="Professional AC Repiping Service"
                                     className="service-image"
                                 />
                             </div>
@@ -56,15 +56,17 @@ export default function RepipingService() {
                                     <span className="service-price-label">Starting Price</span>
                                     <span className="service-price-value">₱ 3,500.00</span>
                                 </div>
-                                
+
                                 <div className="service-duration">
                                     <span className="service-duration-label">Duration</span>
                                     <span className="service-duration-value">3-6 hours</span>
                                 </div>
-                                
-                                <Link href={route('booking')} className="service-book-btn">
+
+                                {/*<Link href={route('booking')} className="service-book-btn">
                                     Book Now
-                                </Link>
+                                </Link>*/}
+
+                                <a href="https://www.facebook.com/kamotechairconservices" className="service-book-btn">Book Now</a>
 
                                 {/* Other Services Section */}
                                 <div className="service-other-services-compact">
@@ -73,9 +75,9 @@ export default function RepipingService() {
                                         {otherServices.map((service, index) => {
                                             const IconComponent = service.icon;
                                             return (
-                                                <Link 
+                                                <Link
                                                     key={index}
-                                                    href={service.href} 
+                                                    href={service.href}
                                                     className="service-other-item-compact"
                                                 >
                                                     <IconComponent size={18} style={{ color: '#083860' }} />
@@ -95,13 +97,13 @@ export default function RepipingService() {
                     <div className="service-container">
                         <div className="service-info-content">
                             <h2 className="service-main-question">Need to replace your AC pipes?</h2>
-                            
+
                             <p className="service-description">
-                                Worn-out or damaged refrigerant lines can severely affect your air conditioners efficiency and cause 
-                                long-term damage. Kamotech provides professional repiping services to replace or upgrade these critical 
-                                components. Using high-quality, insulated copper tubing, our team ensures that refrigerant flows 
-                                efficiently and safely between indoor and outdoor units. Whether it's due to corrosion, leaks, or unit 
-                                relocation, our repiping service is performed with precision and care to restore and maintain your AC 
+                                Worn-out or damaged refrigerant lines can severely affect your air conditioners efficiency and cause
+                                long-term damage. Kamotech provides professional repiping services to replace or upgrade these critical
+                                components. Using high-quality, insulated copper tubing, our team ensures that refrigerant flows
+                                efficiently and safely between indoor and outdoor units. Whether it's due to corrosion, leaks, or unit
+                                relocation, our repiping service is performed with precision and care to restore and maintain your AC
                                 systems peak performance.
                             </p>
 
@@ -112,8 +114,8 @@ export default function RepipingService() {
                                     What's Included:
                                 </h3>
                                 <p className="service-included-text">
-                                    Kamotech's repiping service includes removing old or damaged refrigerant pipes and replacing them 
-                                    with high-quality, insulated copper tubing. We seal and test all connections to ensure leak-free 
+                                    Kamotech's repiping service includes removing old or damaged refrigerant pipes and replacing them
+                                    with high-quality, insulated copper tubing. We seal and test all connections to ensure leak-free
                                     and efficient operation.
                                 </p>
                             </div>
@@ -125,8 +127,8 @@ export default function RepipingService() {
                                     Benefits:
                                 </h3>
                                 <p className="service-benefits-text">
-                                    New piping improves refrigerant flow, enhances cooling performance, and prevents potential leaks 
-                                    that could damage your unit. Repiping is essential during system upgrades or relocations, and 
+                                    New piping improves refrigerant flow, enhances cooling performance, and prevents potential leaks
+                                    that could damage your unit. Repiping is essential during system upgrades or relocations, and
                                     Kamotech ensures a clean, secure, and professional installation that supports long-term system health.
                                 </p>
                             </div>

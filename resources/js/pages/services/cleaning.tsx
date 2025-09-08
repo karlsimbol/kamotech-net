@@ -23,10 +23,10 @@ export default function CleaningService() {
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
-            
+
             <div className="service-page">
                 <PublicNavigation />
-                
+
                 {/* Hero Section */}
                 <section className="service-hero-section">
                     <div className="service-hero-container">
@@ -43,9 +43,9 @@ export default function CleaningService() {
                         <div className="service-content-grid">
                             {/* Service Image */}
                             <div className="service-image-container">
-                                <img 
-                                    src="/images/ac-cleaning.jpg" 
-                                    alt="Professional AC Cleaning Service" 
+                                <img
+                                    src="/images/ac-cleaning.jpg"
+                                    alt="Professional AC Cleaning Service"
                                     className="service-image"
                                 />
                             </div>
@@ -56,15 +56,17 @@ export default function CleaningService() {
                                     <span className="service-price-label">Price</span>
                                     <span className="service-price-value">₱ 450.00</span>
                                 </div>
-                                
+
                                 <div className="service-duration">
                                     <span className="service-duration-label">Duration</span>
                                     <span className="service-duration-value">60 mins per unit</span>
                                 </div>
-                                
-                                <Link href={route('booking')} className="service-book-btn">
+
+                                {/*<Link href={route('booking')} className="service-book-btn">
                                     Book Now
-                                </Link>
+                                </Link>*/}
+
+                                <a href="https://www.facebook.com/kamotechairconservices" className="service-book-btn">Book Now</a>
 
                                 {/* Other Services Section */}
                                 <div className="service-other-services-compact">
@@ -73,9 +75,9 @@ export default function CleaningService() {
                                         {otherServices.map((service, index) => {
                                             const IconComponent = service.icon;
                                             return (
-                                                <Link 
+                                                <Link
                                                     key={index}
-                                                    href={service.href} 
+                                                    href={service.href}
                                                     className="service-other-item-compact"
                                                 >
                                                     <IconComponent size={18} style={{ color: '#083860' }} />
@@ -95,10 +97,10 @@ export default function CleaningService() {
                     <div className="service-container">
                         <div className="service-info-content">
                             <h2 className="service-main-question">Is your AC not cooling like it used to?</h2>
-                            
+
                             <p className="service-description">
-                                Professional air conditioner cleaning service ensures your unit runs smoothly and efficiently. 
-                                We use safe, effective methods to remove dust, dirt, and allergens that affect your air quality 
+                                Professional air conditioner cleaning service ensures your unit runs smoothly and efficiently.
+                                We use safe, effective methods to remove dust, dirt, and allergens that affect your air quality
                                 and system performance.
                             </p>
 
@@ -109,9 +111,9 @@ export default function CleaningService() {
                                     What's Included:
                                 </h3>
                                 <p className="service-included-text">
-                                    Our AC cleaning service involves a detailed cleaning of key components including the air filters, 
-                                    evaporator and condenser coils, drain pipe, fan, and blower. We also perform sanitization to 
-                                    eliminate dust, mold, and bacteria buildup. Finally, we conduct a performance check to ensure 
+                                    Our AC cleaning service involves a detailed cleaning of key components including the air filters,
+                                    evaporator and condenser coils, drain pipe, fan, and blower. We also perform sanitization to
+                                    eliminate dust, mold, and bacteria buildup. Finally, we conduct a performance check to ensure
                                     everything is working efficiently after cleaning.
                                 </p>
                             </div>
@@ -123,8 +125,8 @@ export default function CleaningService() {
                                     Benefits:
                                 </h3>
                                 <p className="service-benefits-text">
-                                    Regular cleaning improves airflow, enhances cooling performance, and maintains good indoor air quality. 
-                                    It helps reduce energy consumption, prevents unpleasant odors, and extends the life of your AC unit. 
+                                    Regular cleaning improves airflow, enhances cooling performance, and maintains good indoor air quality.
+                                    It helps reduce energy consumption, prevents unpleasant odors, and extends the life of your AC unit.
                                     Kamotech's cleaning service ensures your system runs smoothly and keeps your environment clean and comfortable.
                                 </p>
                             </div>

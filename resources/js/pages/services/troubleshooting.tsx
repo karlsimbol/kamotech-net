@@ -23,10 +23,10 @@ export default function TroubleshootingService() {
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
-            
+
             <div className="service-page">
                 <PublicNavigation />
-                
+
                 {/* Hero Section */}
                 <section className="service-hero-section">
                     <div className="service-hero-container">
@@ -43,9 +43,9 @@ export default function TroubleshootingService() {
                         <div className="service-content-grid">
                             {/* Service Image */}
                             <div className="service-image-container">
-                                <img 
-                                    src="/images/troubleshooting.jpg" 
-                                    alt="Professional AC Troubleshooting Service" 
+                                <img
+                                    src="/images/troubleshooting.jpg"
+                                    alt="Professional AC Troubleshooting Service"
                                     className="service-image"
                                 />
                             </div>
@@ -56,15 +56,17 @@ export default function TroubleshootingService() {
                                     <span className="service-price-label">Starting Price</span>
                                     <span className="service-price-value">₱ 500.00</span>
                                 </div>
-                                
+
                                 <div className="service-duration">
                                     <span className="service-duration-label">Duration</span>
                                     <span className="service-duration-value">1-2 hours</span>
                                 </div>
-                                
-                                <Link href={route('booking')} className="service-book-btn">
+
+                                {/*<Link href={route('booking')} className="service-book-btn">
                                     Book Now
-                                </Link>
+                                </Link>*/}
+
+                                <a href="https://www.facebook.com/kamotechairconservices" className="service-book-btn">Book Now</a>
 
                                 {/* Other Services Section */}
                                 <div className="service-other-services-compact">
@@ -73,9 +75,9 @@ export default function TroubleshootingService() {
                                         {otherServices.map((service, index) => {
                                             const IconComponent = service.icon;
                                             return (
-                                                <Link 
+                                                <Link
                                                     key={index}
-                                                    href={service.href} 
+                                                    href={service.href}
                                                     className="service-other-item-compact"
                                                 >
                                                     <IconComponent size={18} style={{ color: '#083860' }} />
@@ -95,13 +97,13 @@ export default function TroubleshootingService() {
                     <div className="service-container">
                         <div className="service-info-content">
                             <h2 className="service-main-question">Is your AC not working properly?</h2>
-                            
+
                             <p className="service-description">
-                                Unexpected AC problems can be frustrating and uncomfortable, especially during hot weather. Kamotech 
-                                offers a comprehensive troubleshooting service to identify and resolve all types of air conditioning 
-                                issues. Our experienced technicians perform a detailed assessment of your system, including electrical 
-                                checks, airflow testing, and refrigerant analysis. Once the root cause is found, we provide clear 
-                                recommendations and fast solutions to get your system back in working order. Whether it's strange noises, 
+                                Unexpected AC problems can be frustrating and uncomfortable, especially during hot weather. Kamotech
+                                offers a comprehensive troubleshooting service to identify and resolve all types of air conditioning
+                                issues. Our experienced technicians perform a detailed assessment of your system, including electrical
+                                checks, airflow testing, and refrigerant analysis. Once the root cause is found, we provide clear
+                                recommendations and fast solutions to get your system back in working order. Whether it's strange noises,
                                 weak airflow, or complete failure, Kamotech has the expertise to fix it.
                             </p>
 
@@ -112,8 +114,8 @@ export default function TroubleshootingService() {
                                     What's Included:
                                 </h3>
                                 <p className="service-included-text">
-                                    This service includes a comprehensive inspection of all AC components—electrical systems, thermostat, 
-                                    motors, refrigerant levels, and airflow. We identify the root cause of problems and provide expert 
+                                    This service includes a comprehensive inspection of all AC components—electrical systems, thermostat,
+                                    motors, refrigerant levels, and airflow. We identify the root cause of problems and provide expert
                                     recommendations for resolution.
                                 </p>
                             </div>
@@ -125,8 +127,8 @@ export default function TroubleshootingService() {
                                     Benefits:
                                 </h3>
                                 <p className="service-benefits-text">
-                                    Kamotech's troubleshooting helps you quickly pinpoint issues without guesswork. It prevents unnecessary 
-                                    repairs, saves time, and ensures that the right fix is applied the first time. Our goal is to restore 
+                                    Kamotech's troubleshooting helps you quickly pinpoint issues without guesswork. It prevents unnecessary
+                                    repairs, saves time, and ensures that the right fix is applied the first time. Our goal is to restore
                                     your comfort and system efficiency with accurate diagnostics.
                                 </p>
                             </div>

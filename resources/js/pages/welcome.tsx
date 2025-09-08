@@ -15,10 +15,10 @@ export default function Welcome() {
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
-            
+
             <div className="welcome-page">
                             <PublicNavigation />
-            
+
             {/* Hero Slider Section */}
             <HeroSlider />
 
@@ -29,35 +29,35 @@ export default function Welcome() {
                             <h1 className="company-hero-title">
                                 Air Conditioning Services by <span className="company-brand">Kamotech</span>
                             </h1>
-                            
+
                             <div className="company-hero-card">
                                 <div className="company-tagline">
                                     <span className="tagline-text">"Find the affordable, Find your satisfaction!"</span>
                                 </div>
-                                
+
                                 <div className="company-description">
                                     <p className="description-title">Looking for a trusted team to take care of your air conditioning needs?</p>
                                     <p className="description-text">
-                                        At Kamotech, we offer reliable, affordable, and professional AC services—from cleaning and 
-                                        repair to installation and relocation. Proudly based in Balanga City, Bataan, our small but 
-                                        dedicated team is ready to serve homes and businesses across the province of Bataan. We're 
+                                        At Kamotech, we offer reliable, affordable, and professional AC services—from cleaning and
+                                        repair to installation and relocation. Proudly based in Balanga City, Bataan, our small but
+                                        dedicated team is ready to serve homes and businesses across the province of Bataan. We're
                                         committed to keeping you cool and comfortable all year round!
                                     </p>
                                 </div>
-                                
+
                                 <div className="company-cta">
                                     <button className="reliable-service-btn">
                                         Your Comfort, Our Priority
                                     </button>
                                 </div>
-                                
+
                                 <div className="company-commitment">
                                     <p className="commitment-text">
-                                        Your satisfaction and comfort are our top priorities. Every job we do reflects our 
+                                        Your satisfaction and comfort are our top priorities. Every job we do reflects our
                                         commitment to quality workmanship, fair pricing, and genuine customer care.
                                     </p>
                                 </div>
-                                
+
                                 <div className="company-values">
                                     <div className="value-item">
                                         <div className="value-icon">
@@ -82,7 +82,7 @@ export default function Welcome() {
                         </div>
                 </div>
                 </section>
-                
+
                 {/* Choice of Services Section */}
                 <section id="services" className="choice-services-section">
                     <div className="section-container">
@@ -91,7 +91,7 @@ export default function Welcome() {
                                 Kamotech <span className="choice-highlight">Choice</span> of Services
                             </h2>
                         </div>
-                        
+
                         <div className="choice-services-grid">
                             <div className="choice-service-card">
                                 <div className="choice-service-image">
@@ -99,25 +99,28 @@ export default function Welcome() {
                                 </div>
                                 <h3 className="choice-service-title">AC Cleaning</h3>
                                 <p className="choice-service-description">Is your AC not cooling like it used to?</p>
-                                <Link href={route('booking')} className="choice-book-btn">Book Now</Link>
+                                {/*<Link href="https://www.facebook.com/kamotechairconservices" className="choice-book-btn">Book Now</Link>*/}
+                                <a href="https://www.facebook.com/kamotechairconservices" className="choice-book-btn">Book Now</a>
                             </div>
-                            
+
                             <div className="choice-service-card">
                                 <div className="choice-service-image">
                                     <img src="/images/ac-repair.jpg" alt="AC Repair" />
                                 </div>
                                 <h3 className="choice-service-title">AC Repair</h3>
                                 <p className="choice-service-description">Is your AC not working properly?</p>
-                                <Link href={route('booking')} className="choice-book-btn">Book Now</Link>
+                                {/*<Link href={route('booking')} className="choice-book-btn">Book Now</Link>*/}
+                                <a href="https://www.facebook.com/kamotechairconservices" className="choice-book-btn">Book Now</a>
                             </div>
-                            
+
                             <div className="choice-service-card">
                                 <div className="choice-service-image">
                                     <img src="/images/ac-installation.jpg" alt="AC Installation" />
                                 </div>
                                 <h3 className="choice-service-title">AC Installation</h3>
                                 <p className="choice-service-description">Need a new AC installed?</p>
-                                <Link href={route('booking')} className="choice-book-btn">Book Now</Link>
+                                {/*<Link href={route('booking')} className="choice-book-btn">Book Now</Link>*/}
+                                <a href="https://www.facebook.com/kamotechairconservices" className="choice-book-btn">Book Now</a>
                             </div>
 
                             <div className="choice-service-card">
@@ -126,7 +129,8 @@ export default function Welcome() {
                                 </div>
                                 <h3 className="choice-service-title">AC Freon Charging</h3>
                                 <p className="choice-service-description">Is your AC not cooling enough?</p>
-                                <Link href={route('booking')} className="choice-book-btn">Book Now</Link>   
+                                {/*<Link href={route('booking')} className="choice-book-btn">Book Now</Link>*/}
+                                <a href="https://www.facebook.com/kamotechairconservices" className="choice-book-btn">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -138,7 +142,7 @@ export default function Welcome() {
                         <div className="section-header">
                             <h2 className="aircon-types-title">Aircon Types We Service</h2>
                         </div>
-                        
+
                         <div className="aircon-types-grid">
                             <div className="aircon-type-card">
                                 <div className="aircon-type-image">
@@ -146,14 +150,14 @@ export default function Welcome() {
                                 </div>
                                 <h3 className="aircon-type-title">Window Type</h3>
                             </div>
-                            
+
                             <div className="aircon-type-card">
                                 <div className="aircon-type-image">
                                     <img src="/images/split.png" alt="Split Type AC" />
                                 </div>
                                 <h3 className="aircon-type-title">Split Type</h3>
                             </div>
-                            
+
                             <div className="aircon-type-card">
                                 <div className="aircon-type-image">
                                     <img src="/images/tower.png" alt="Floor Standing AC" />
@@ -172,7 +176,7 @@ export default function Welcome() {
                                 More <span className="kamotech-highlight">Kamotech</span> Services
                             </h2>
                         </div>
-                        
+
                         <div className="more-services-grid">
                             <div className="more-service-card">
                                 <div className="more-service-image">
@@ -180,25 +184,28 @@ export default function Welcome() {
                                 </div>
                                 <h3 className="more-service-title">Repiping</h3>
                                 <p className="more-service-description">Need to replace your AC pipes?</p>
-                                <Link href={route('booking')} className="more-book-btn">Book Now</Link>
+                                {/*<Link href={route('booking')} className="more-book-btn">Book Now</Link>*/}
+                                <a href="https://www.facebook.com/kamotechairconservices" className="choice-book-btn">Book Now</a>
                             </div>
-                            
+
                             <div className="more-service-card">
                                 <div className="more-service-image">
                                     <img src="/images/troubleshooting.jpg" alt="Troubleshooting" />
                                 </div>
                                 <h3 className="more-service-title">Troubleshooting</h3>
                                 <p className="more-service-description">Is your AC not working properly?</p>
-                                <Link href={route('booking')} className="more-book-btn">Book Now</Link>
+                                {/*<Link href={route('booking')} className="more-book-btn">Book Now</Link>*/}
+                                <a href="https://www.facebook.com/kamotechairconservices" className="choice-book-btn">Book Now</a>
                             </div>
-                            
+
                             <div className="more-service-card">
                                 <div className="more-service-image">
                                     <img src="/images/ac-relocation.jpg" alt="AC Relocation" />
                                 </div>
                                 <h3 className="more-service-title">AC Relocation</h3>
                                 <p className="more-service-description">Moving to a new location?</p>
-                                <Link href={route('booking')} className="more-book-btn">Book Now</Link>
+                                {/*<Link href={route('booking')} className="more-book-btn">Book Now</Link>*/}
+                                <a href="https://www.facebook.com/kamotechairconservices" className="choice-book-btn">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -213,7 +220,7 @@ export default function Welcome() {
                             </h2>
                             <p className="brands-subtitle">We offer essential services for all brands and units.</p>
                         </div>
-                        
+
                         <div className="brands-grid">
                             <div className="brand-logo">
                                 <img src="/images/brands/carrier.png" alt="Carrier" />
@@ -249,9 +256,9 @@ export default function Welcome() {
                                 <img src="/images/brands/hitachi.png" alt="Hitachi" />
                             </div>
                         </div>
-                        
+
                         <div className="brands-contact">
-                            <p>Not sure if we service your AC? <a href="#contact" className="contact-link">Contact Us!</a></p>
+                            <p>Not sure if we service your AC? <a href="https://www.facebook.com/kamotechairconservices" className="contact-link">Contact Us!</a></p>
                         </div>
                     </div>
                 </section>
@@ -265,7 +272,7 @@ export default function Welcome() {
                             </h2>
                             <p className="reviews-subtitle">See what our customers say about our services</p>
                         </div>
-                        
+
                         <div className="reviews-grid">
                             <div className="review-card">
                                 <div className="review-stars">
@@ -286,7 +293,7 @@ export default function Welcome() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="review-card">
                                 <div className="review-stars">
                                     <Star className="star filled" />
@@ -306,7 +313,7 @@ export default function Welcome() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="review-card">
                                 <div className="review-stars">
                                     <Star className="star filled" />
@@ -327,7 +334,7 @@ export default function Welcome() {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="reviews-action">
                             <Link href="/reviews" className="view-all-reviews-btn">View All Reviews</Link>
                         </div>

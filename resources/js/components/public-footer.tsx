@@ -10,12 +10,12 @@ export function PublicFooter() {
                     <div className="footer-section">
                         <h4 className="footer-title">Kamotech</h4>
                         <p className="footer-description">
-                            Your trusted partner for professional air-conditioning services. 
-                            We provide expert installation, maintenance, and repair services 
+                            Your trusted partner for professional air-conditioning services.
+                            We provide expert installation, maintenance, and repair services
                             for residential and commercial properties.
                         </p>
                         <div className="footer-contact-item">
-                            
+
                         </div>
                     </div>
 
@@ -38,10 +38,11 @@ export function PublicFooter() {
                         <h4 className="footer-subtitle">Quick Links</h4>
                         <ul className="footer-links">
                             <li><Link href={route('about')} className="footer-link">About Us</Link></li>
-                            <li><a href="#support" className="footer-link">Support</a></li>
+                            <li><a href="https://www.facebook.com/kamotechairconservices" className="footer-link">Support</a></li>
                             <li><Link href={route('contact')} className="footer-link">Contact Us</Link></li>
-                            <li><Link href={route('login')} className="footer-link">Customer Login</Link></li>
-                            <li><a href="#booking" className="footer-link">Book Service</a></li>
+                            {/*<li><Link href={route('login')} className="footer-link">Customer Login</Link></li>*/}
+                            <li><a href="https://www.facebook.com/kamotechairconservices" className="footer-link">Customer Login</a></li>
+                            <li><a href="https://www.facebook.com/kamotechairconservices" className="footer-link">Book Service</a></li>
                         </ul>
                     </div>
 
@@ -51,13 +52,13 @@ export function PublicFooter() {
                         <div className="footer-contact">
                             <div className="footer-contact-item">
                                 <Phone className="footer-icon" />
-                                <a href="tel:09074452484"> 
-                                    <span>0907 445 2484</span>
+                                <a href="tel:09770936399">
+                                    <span>0977 093 6399</span>
                                 </a>
                             </div>
                             <div className="footer-contact-item">
                                 <Mail className="footer-icon" />
-                                <a href="mailto:kamotechairconditioningandserv@gmail.com">  
+                                <a href="mailto:kamotechairconditioningandserv@gmail.com">
                                     <span>kamotechairconditioning<br />andserv@gmail.com</span>
                                 </a>
                             </div>

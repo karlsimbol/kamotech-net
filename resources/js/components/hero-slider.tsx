@@ -27,58 +27,59 @@ const slides: SlideData[] = [
         subtitle: 'Find the affordable, Find your satisfaction!',
         primaryButton: {
             text: 'BOOK NOW',
-            href: '/booking'
+            href: "https://www.facebook.com/kamotechairconservices"
         },
         secondaryButton: {
             text: 'SIGN UP',
-            href: route('register')
+            href:"https://www.facebook.com/kamotechairconservices"
         }
     },
     {
         id: 2,
+        backgroundImage: '/images/slide/3.jpg',
+        welcome: 'Something Cool is Coming Your Way',
+        title: 'WEBSITE LAUNCHING SOON',
+        subtitle: 'Stay Tuned • Great Deals • Hassle-Free Booking',
+        primaryButton: {
+            text: 'STAY UPDATED',
+            href: "https://www.facebook.com/kamotechairconservices"
+        },
+        secondaryButton: {
+            text: 'VISIT US',
+            href: "https://www.facebook.com/kamotechairconservices"
+        }
+    },
+    {
+        id: 3,
         backgroundImage: '/images/slide/2.jpg',
         welcome: 'Reliable Aircon Services Anytime, Anywhere',
         title: 'FREE SURVEY & FREE CHECKUP!',
         subtitle: 'Cleaning • Repair • Freon Charging • Installation • Relocation & More',
         primaryButton: {
             text: 'GET QUOTE',
-            href: route('booking')
+            href: "https://www.facebook.com/kamotechairconservices"
         },
         secondaryButton: {
             text: 'LEARN MORE',
-            href: '#services'
-        }
-    },
-    {
-        id: 3,
-        backgroundImage: '/images/slide/3.jpg',
-        welcome: 'Celebrate the Start of the Ber Months',
-        title: 'BER MONTHS KICKOFF SALE – SEPT 30–OCT 1',
-        subtitle: 'Aircon Cleaning Starts at ₱450 • Free Survey & Checkup',
-        primaryButton: {
-            text: 'VIEW SERVICES',
-            href: '#services'
-        },
-        secondaryButton: {
-            text: 'CONTACT US',
-            href: '#contact'
+            href: "https://www.facebook.com/kamotechairconservices"
         }
     },
     {
         id: 4,
         backgroundImage: '/images/slide/4.jpg',
-        welcome: 'New Customers Get More Savings',
-        title: 'GET 10% OFF YOUR FIRST SERVICE',
-        subtitle: 'Book today and experience professional, affordable aircon care.',
+        welcome: 'Something Cool is Coming Your Way',
+        title: 'WEBSITE LAUNCHING SOON',
+        subtitle: 'Stay Tuned • Great Deals • Hassle-Free Booking',
         primaryButton: {
-            text: 'SCHEDULE NOW',
-            href: '#booking'
+            text: 'STAY UPDATED',
+            href: "https://www.facebook.com/kamotechairconservices"
         },
         secondaryButton: {
-            text: 'LEARN MORE',
-            href: '#contact'
+            text: 'VISIT US',
+            href: "https://www.facebook.com/kamotechairconservices"
         }
     },
+
 ];
 
 export function HeroSlider() {
@@ -120,12 +121,12 @@ export function HeroSlider() {
                         className={`slide ${index === currentSlide ? 'active' : ''}`}
                         style={{
                             backgroundImage: `linear-gradient(
-                              rgba(0, 63, 107, 0.5), 
+                              rgba(0, 63, 107, 0.5),
                               rgba(30, 64, 175, 0.5)
                             ), url(${slide.backgroundImage})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center"
-                          }}                      
+                          }}
                     >
                         <div className="slide-overlay"></div>
                         <div className="slide-container">
@@ -134,22 +135,22 @@ export function HeroSlider() {
                                 <h1 className="slide-title">{slide.title}</h1>
                                 <p className="slide-subtitle">{slide.subtitle}</p>
                                 <div className="slide-buttons">
-                                    <a 
-                                        href={slide.primaryButton.href} 
+                                    <a
+                                        href={slide.primaryButton.href}
                                         className="slide-btn slide-btn-primary"
                                     >
                                         {slide.primaryButton.text}
                                     </a>
                                     {slide.secondaryButton.href.startsWith('/') ? (
-                                        <Link 
-                                            href={route(slide.secondaryButton.href.slice(1))} 
+                                        <Link
+                                            href={route(slide.secondaryButton.href.slice(1))}
                                             className="slide-btn slide-btn-secondary"
                                         >
                                             {slide.secondaryButton.text}
                                         </Link>
                                     ) : (
-                                        <a 
-                                            href={slide.secondaryButton.href} 
+                                        <a
+                                            href={slide.secondaryButton.href}
                                             className="slide-btn slide-btn-secondary"
                                         >
                                             {slide.secondaryButton.text}
@@ -163,15 +164,15 @@ export function HeroSlider() {
             </div>
 
             {/* Navigation Arrows */}
-            <button 
-                className="slider-nav slider-nav-prev" 
+            <button
+                className="slider-nav slider-nav-prev"
                 onClick={prevSlide}
                 aria-label="Previous slide"
             >
                 <ChevronLeft size={24} />
             </button>
-            <button 
-                className="slider-nav slider-nav-next" 
+            <button
+                className="slider-nav slider-nav-next"
                 onClick={nextSlide}
                 aria-label="Next slide"
             >
