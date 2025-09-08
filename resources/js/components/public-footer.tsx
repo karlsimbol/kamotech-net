@@ -40,9 +40,8 @@ export function PublicFooter() {
                             <li><Link href={route('about')} className="footer-link">About Us</Link></li>
                             <li><a href="https://www.facebook.com/kamotechairconservices" className="footer-link">Support</a></li>
                             <li><Link href={route('contact')} className="footer-link">Contact Us</Link></li>
-                            {/*<li><Link href={route('login')} className="footer-link">Customer Login</Link></li>*/}
-                            <li><a href="https://www.facebook.com/kamotechairconservices" className="footer-link">Customer Login</a></li>
-                            <li><a href="https://www.facebook.com/kamotechairconservices" className="footer-link">Book Service</a></li>
+                            {/*<li><Link href={route('login')} className="footer-link">Customer Login</Link></li>
+                            <li><a href={route('booking')} className="footer-link">Book Service</a></li>*/}
                         </ul>
                     </div>
 

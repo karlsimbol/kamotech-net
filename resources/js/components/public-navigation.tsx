@@ -107,12 +107,10 @@ export function PublicNavigation() {
                         <li><Link href={route('contact')} className="nav-link">Contact Us</Link></li>
                     </ul>
 
-                    <div className="nav-auth">
-                        {/*<Link href={route('login')} className="nav-auth-link login-link">Log in</Link>
-                        <Link href={route('register')} className="nav-auth-link signup-link">Sign up</Link>*/}
-                        <a href="https://www.facebook.com/kamotechairconservices" className="nav-auth-link login-link">Log in</a>
-                        <a href="https://www.facebook.com/kamotechairconservices" className="nav-auth-link signup-link">Sign up</a>
-                    </div>
+                    {/*<div className="nav-auth">
+                        <Link href={route('login')} className="nav-auth-link login-link">Log in</Link>
+                        <Link href={route('register')} className="nav-auth-link signup-link">Sign up</Link>
+                    </div>*/}
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -169,12 +167,10 @@ export function PublicNavigation() {
                         <li><Link href={route('contact')} className="nav-mobile-link" onClick={() => setIsMenuOpen(false)}>Contact Us</Link></li>
                     </ul>
 
-                    <div className="nav-mobile-auth">
-                        {/*<Link href={route('login')} className="nav-mobile-auth-link login-link">Log in</Link>
-                        <Link href={route('register')} className="nav-mobile-auth-link signup-link">Sign up</Link>*/}
-                        <Link href="https://www.facebook.com/kamotechairconservices" className="nav-mobile-auth-link login-link">Log in</Link>
-                        <Link href="https://www.facebook.com/kamotechairconservices" className="nav-mobile-auth-link signup-link">Sign up</Link>
-                    </div>
+                    {/*<div className="nav-mobile-auth">
+                        <Link href={route('login')} className="nav-mobile-auth-link login-link">Log in</Link>
+                        <Link href={route('register')} className="nav-mobile-auth-link signup-link">Sign up</Link>
+                    </div>*/}
                 </div>
             )}
         </nav>
