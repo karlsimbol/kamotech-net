@@ -283,13 +283,14 @@ export default function Welcome() {
                                     <Star className="star filled" />
                                 </div>
                                 <p className="review-text">
-                                    "Ayos ang pagkakalagay lagay, saktong sakto na tumatagpos ang buong kwarto. Salamat po."
+                                    "Ang linis ng pagkakabit. Ang smooth ng takbo ng bagong aircon namin pagkatapos ng installation.
+                                    Ang bait kausap ng staff at mabilis din silang natapos. Ganda ng service!"
                                 </p>
                                 <div className="review-author">
                                     <div className="author-avatar">F</div>
                                     <div className="author-info">
-                                        <div className="author-name">Francis Karl</div>
-                                        <div className="author-service">Installation | Technician: Carlo Mendoza</div>
+                                        <div className="author-name">F****** S*****</div>
+                                        <div className="author-service">Installation | Technician: C***** M******</div>
                                     </div>
                                 </div>
                             </div>
@@ -303,13 +304,14 @@ export default function Welcome() {
                                     <Star className="star filled" />
                                 </div>
                                 <p className="review-text">
-                                    "Ayos ang pagkakalagay-gawa. Malamig na ulit, ang sara na ng tulog neto. Salamat!"
+                                    "Ang ayos ng pagkarepair. Ang lamig ulit ng aircon namin matapos nilang ayusin nang maayos.
+                                    Very professional ang mga staff at mabilis din silang natapos. Sulit ang service!"
                                 </p>
                                 <div className="review-author">
-                                    <div className="author-avatar">F</div>
+                                    <div className="author-avatar">J</div>
                                     <div className="author-info">
-                                        <div className="author-name">Francis Karl</div>
-                                        <div className="author-service">Repair | Technician: Mark Anthony Reyes</div>
+                                        <div className="author-name">J*** D******</div>
+                                        <div className="author-service">Repair | Technician: J*** C***</div>
                                     </div>
                                 </div>
                             </div>
@@ -323,21 +325,22 @@ export default function Welcome() {
                                     <Star className="star filled" />
                                 </div>
                                 <p className="review-text">
-                                    "Ang linis ng pagkakalagay. Ang lamig ulit ng aircon namin pagkatapos nindan. Masayos kausap ang mga staff at mabilis din silang natapos. Ganda ng serbisyo!"
+                                    "Ang ganda ng paglilinis. Ang lamig ulit ng aircon namin pagkatapos nilang i-service.
+                                    Magaan kausap ang staff at mabilis din natapos ang trabaho. Thumbs up sa service!"
                                 </p>
                                 <div className="review-author">
-                                    <div className="author-avatar">S</div>
+                                    <div className="author-avatar">R</div>
                                     <div className="author-info">
-                                        <div className="author-name">Sample Customer</div>
-                                        <div className="author-service">Cleaning | Technician: Mark Anthony Reyes</div>
+                                        <div className="author-name">R***** S*******</div>
+                                        <div className="author-service">Cleaning | Technician: P**** S***** </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="reviews-action">
+                        {/*<div className="reviews-action">
                             <Link href="/reviews" className="view-all-reviews-btn">View All Reviews</Link>
-                        </div>
+                        </div>*/}
                 </div>
                 </section>
 
