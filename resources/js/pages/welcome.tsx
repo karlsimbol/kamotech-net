@@ -41,12 +41,6 @@ export default function Welcome() {
                                         At Kamotech, we provide reliable, affordable, and professional air conditioning services—from cleaning
                                         and repair to installation and relocation. Based in Balanga City, Bataan, our small but dedicated team
                                         proudly serves both homes and businesses across the province.
-                                        <br />
-                                        <br />
-                                        We also offer: <br />
-                                        ✨ 2025 Year Model AC Units – Price starts at ₱19,999 only <br />
-                                        🆕 Brand New Unit / Factory Sealed <br />
-                                        ✅ FREE Installation
                                     </p>
                                 </div>
 

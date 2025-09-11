@@ -23,7 +23,7 @@ const slides: SlideData[] = [
         id: 1,
         backgroundImage: '/images/slide/1.jpg',
         welcome: 'Kamotech Aircon Services',
-        title: 'PRICE STARTS AT 450 PESOS!',
+        title: 'TOP-QUALITY SERVICE, EVERY TIME!',
         subtitle: 'Find the affordable, Find your satisfaction!',
         primaryButton: {
             text: 'BOOK NOW',
@@ -36,10 +36,10 @@ const slides: SlideData[] = [
     },
     {
         id: 2,
-        backgroundImage: '/images/slide/3.jpg',
-        welcome: 'Something Cool is Coming Your Way',
-        title: 'WEBSITE LAUNCHING SOON',
-        subtitle: 'Stay Tuned • Great Deals • Hassle-Free Booking',
+        backgroundImage: '/images/slide/2.jpg',
+        welcome: 'Trusted Aircon Experts',
+        title: 'PROFESSIONAL & RELIABLE SERVICE',
+        subtitle: 'We deliver quality work for every cleaning, repair, and installation.',
         primaryButton: {
             text: 'STAY UPDATED',
             href: "https://www.facebook.com/kamotechairconservices"
@@ -51,9 +51,24 @@ const slides: SlideData[] = [
     },
     {
         id: 3,
-        backgroundImage: '/images/slide/2.jpg',
+        backgroundImage: '/images/slide/3.jpg',
+        welcome: '2025 Year Model AC Units',
+        title: 'PRICE STARTS AT ₱19,999 ONLY',
+        subtitle: 'Brand New • Factory Sealed • FREE Installation',
+        primaryButton: {
+            text: 'STAY UPDATED',
+            href: "https://www.facebook.com/kamotechairconservices"
+        },
+        secondaryButton: {
+            text: 'VISIT US',
+            href: "https://www.facebook.com/kamotechairconservices"
+        }
+    },
+    {
+        id: 4,
+        backgroundImage: '/images/slide/4.jpg',
         welcome: 'Reliable Aircon Services Anytime, Anywhere',
-        title: 'FREE SURVEY & FREE CHECKUP!',
+        title: 'KEEPING YOUR AIRCON COOL!',
         subtitle: 'Cleaning • Repair • Freon Charging • Installation • Relocation & More',
         primaryButton: {
             text: 'GET QUOTE',
@@ -64,21 +79,7 @@ const slides: SlideData[] = [
             href: "https://www.facebook.com/kamotechairconservices"
         }
     },
-    {
-        id: 4,
-        backgroundImage: '/images/slide/4.jpg',
-        welcome: 'Something Cool is Coming Your Way',
-        title: 'WEBSITE LAUNCHING SOON',
-        subtitle: 'Stay Tuned • Great Deals • Hassle-Free Booking',
-        primaryButton: {
-            text: 'STAY UPDATED',
-            href: "https://www.facebook.com/kamotechairconservices"
-        },
-        secondaryButton: {
-            text: 'VISIT US',
-            href: "https://www.facebook.com/kamotechairconservices"
-        }
-    },
+
 
 ];
 
