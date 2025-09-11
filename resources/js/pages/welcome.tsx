@@ -32,16 +32,21 @@ export default function Welcome() {
 
                             <div className="company-hero-card">
                                 <div className="company-tagline">
-                                    <span className="tagline-text">"Find the affordable, Find your satisfaction!"</span>
+                                    <span className="tagline-text">Find the affordable, Find your satisfaction!</span>
                                 </div>
 
                                 <div className="company-description">
                                     <p className="description-title">Looking for a trusted team to take care of your air conditioning needs?</p>
                                     <p className="description-text">
-                                        At Kamotech, we offer reliable, affordable, and professional AC services—from cleaning and
-                                        repair to installation and relocation. Proudly based in Balanga City, Bataan, our small but
-                                        dedicated team is ready to serve homes and businesses across the province of Bataan. We're
-                                        committed to keeping you cool and comfortable all year round!
+                                        At Kamotech, we provide reliable, affordable, and professional air conditioning services—from cleaning
+                                        and repair to installation and relocation. Based in Balanga City, Bataan, our small but dedicated team
+                                        proudly serves both homes and businesses across the province.
+                                        <br />
+                                        <br />
+                                        We also offer: <br />
+                                        ✨ 2025 Year Model AC Units – Price starts at ₱19,999 only <br />
+                                        🆕 Brand New Unit / Factory Sealed <br />
+                                        ✅ FREE Installation
                                     </p>
                                 </div>
 
